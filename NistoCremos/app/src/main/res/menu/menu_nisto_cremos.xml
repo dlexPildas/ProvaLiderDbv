@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="usuario.app.nistocremos.NistoCremosActivity">
+    <item
+        android:id="@+id/configuracao"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:orderInCategory="100"
+        android:title="Configuração" />
+    <item
+        android:id="@+id/Mensagem"
+        android:orderInCategory="101"
+        android:title="Mensagem" />
+    <item
+        android:id="@+id/sobre"
+        android:orderInCategory="102"
+        android:title="Sobre"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="usuario.app.nistocremos.PerguntasNistoCremosActivity">
+
+
+
+    <Button
+        android:id="@+id/botaoFlutuanteVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Voltar"
+        android:textColor="@android:color/white"
+        app:layout_constraintBaseline_toBaselineOf="@+id/botaoResposta"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <Button
+        android:id="@+id/botaoResposta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        android:text="Resposta"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/textoPergunta"
+        android:layout_width="310dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="110dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/botaoProximaPergunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorPrimary"
+        android:text="Próxima"
+        android:textColor="@android:color/white"
+        app:layout_constraintBaseline_toBaselineOf="@+id/botaoResposta"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBaseline_creator="1" />
+
+    <EditText
+        android:id="@+id/textoEscolhaCapitulo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginStart="14dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/botaoPesquisar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@+id/textoPergunta"
+        app:layout_constraintRight_toLeftOf="@+id/botaoPesquisar"
+        app:layout_constraintTop_toTopOf="@+id/botaoPesquisar"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/textoNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Escolha o capítulo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botaoPesquisar"
+        android:layout_width="89dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorPrimary"
+        android:text="Pesquisar"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="301dp"
+        android:layout_height="83dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="23dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoPergunta"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <RadioButton
+            android:id="@+id/rbA"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <RadioButton
+            android:id="@+id/rbB"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <RadioButton
+            android:id="@+id/rbC"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <RadioButton
+            android:id="@+id/rbD"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+    </RadioGroup>
+
+    <ProgressBar
+        android:id="@+id/barraPontos"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="90dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/botaoFlutuanteVoltar"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintVertical_bias="0.25" />
+
+
+</android.support.constraint.ConstraintLayout>
